@@ -1,0 +1,11 @@
+p=list(map(str, input().split())) 
+q=int(p[-1])
+
+p=p[:q]
+
+l=[]
+
+for i in p:
+    if i.isalpha() and i not in l:
+        print(i, end=" ") 
+        l.append(i)
